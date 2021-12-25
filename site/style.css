@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    
+}
+
+/*Pagina Home Inicio*/
+
+.corpo{
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Menu inicio*/
+
+.menu{
+    width: 100%;
+    background-color:#E5E5E5;
+    
+}
+.menu .linha1{
+    height: 42px;
+    background-color: #9F9F9F;
+}
+.menu .linha1 .linha2{
+    width: 100;
+    height: 19px;
+    background-color: #646464;
+}
+
+.menu .navegacao{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+.navegacao li{
+    
+    height: 64px;
+    padding: 20px;
+}
+.navegacao li a{
+    text-decoration: none;
+    color: black;
+}
+ 
+/*Menu Fim*/
+
+/*Resumo inicio*/
+.resumoConteiner{
+    width: 100%;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resumo{
+    width: 80%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.resumo .tituloResumo{
+    font-family: Heebo;
+    width: 506px;
+    text-align: center;
+}
+.resumo .tituloResumo h1{
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 44px;
+}
+.resumo .tituloResumo p{
+    margin-top: 25px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+}
+.curriculo{
+    grid-column: 1;
+}
+.curriculo button{
+    width: 208px;
+    height: 47px;
+    border-radius: 2px;
+    color: white;
+    background-color:#787878
+   
+    
+}
+.foto{
+    width: 260px;
+    height: 260px;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    grid-column: 2;
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end:2 ;
+   
+}
+.foto img{
+   
+    border-radius: 50%;
+    width: 243px;
+    height: 243px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    grid-column: 2;
+}
+/*Resumo Fim*/
+
+/*Exp inicio*/
+.experiencias{
+   width: 100%;
+    background-color: #F3F3F3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+.experiencias .tituloExp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    grid-column-start:1 ;
+    grid-column-end: 3;
+}
+.experiencias .tituloExp h1{
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 44px;
+   
+}
+.exp1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-right: solid 1px #989898;
+
+}
+.exp2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.exp1 div p , .exp2 div p{
+    width: 110px;
+    background-color: wheat;
+    text-align: center;
+    
+}
+.exp1 div, .exp2 div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.exp1{
+    grid-column: 1;
+}
+.exp2{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.barraExp{
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: violet;
+}
+
+.htmlCss, 
+.javaScript,
+.php,
+.node,
+.fluig,
+.python{
+    display: flex;
+}
+/*Exp fim*/
+
+/*Trabalhos inicio*/
+
+.trabalhos{
+    width: 80%;
+    background-color: white;
+}
+.trabalho{
+    
+    display: flex;
+    width: 858px;
+}
+.trabalho div{
+    padding: 10px;
+}
+.trabalho .infoTrabalho p:last-child{
+    margin-top: 10px;
+    
+}
+.trabalho .imagemTrabalho img{
+    width: 246px;
+    height: 180px;
+    background-color: aqua;
+}
+
+.trabalho .infoTrabalho h1{
+    width: 307px;
+    height: 44px;
+    left: 410px;
+    top: 1036px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 44px;
+}
+
+.trabalho .imagemTrabalho p{
+    width: 594px;
+    height: 93px;
+    left: 410px;
+    top: 1147px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #21243D;
+}
+
+.infoTrabalho .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Width: 62px;
+    Height: 25px;
+    border: 1px solid black;
+    background-color: #142850;
+    color: white;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+/*Trabalhos Fim*/
+
+/*Rodape inicio*/
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    width: 100%;
+    Height: 182px;
+   
+}
+.rodape div{
+    margin: 10px;
+}
+
+.rodape .icones i{
+    margin: 10px;
+    font-size: 30px;
+    Width: 30px;
+    Height: 30px;
+}
+
+/*Rodape fim*/
+
+/*Pagina Home Fim*/
+
+/*Pagina Blog inicio*/
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 10px;
+
+    
+}
+.blogTitulo{
+    display: flex;
+    width: 55%;
+    height: 54px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243D;
+}
+.poste{
+    border-bottom: 1px solid black;
+    
+}
+.poste:last-child{
+    margin-bottom: 50px;
+}
+.poste .infoPoste{
+   margin-bottom: 15px;
+}
+.infoPoste .posteData{
+    width: 100px;
+}
+.blogRodape{
+  
+    bottom: 0;
+  
+}
+
+/*Pagina Blog Fim*/
+
+/*Pagina Formulario Inicio*/
+
+
+
+
+
+
+
+/*Pagina Formulario Fim*/

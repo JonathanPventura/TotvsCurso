@@ -343,8 +343,146 @@ body{
 
 
 
+.formulario{
+    width: 90%;
+   
+}
+/*Titulo topo inicio */
+.formulario .titulo {
+    width: 100%;
+    background-color: darkturquoise;
+    height: 109px;
+    background: #F3F3F3;
+    border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 38px;
+}
+/*Titulo Topo Fim*/
+
+/*Informações solicitante inicio*/
+.formularioSolicitante{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+.formularioSolicitante .tituloSolicitante{
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #656565;
+    padding: 25px;
+}
+
+.dadosSolicitante div{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+ 
+}
+.dadosSolicitante div input{
+    height: 32px;
+    border: 1px solid #989898;
+    box-sizing: border-box;
+    border-radius: 10px;
+ 
+}
+/*Informações solicitante fim*/
+
+/*Inicio despesas*/
+.tituloDespesas{
+    border: 1px solid black;
+    
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    width: 100%;
+    background-color: brown;
+}
+.tituloDespesas h1{
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+}
+.tituloDespesas .buttonNovo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.tituloDespesas .buttonNovo button{
+    width: 135px;
+    height: 36px;
+    border-radius: 10px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: white;
+    background: #71AA70;
+
+}
+.tituloDespesas .buttonNovo button i{
+    margin-right: 10px;
 
 
+ }
+.formularioDespesa{
+    background-color: seagreen;
+    min-height: 600px;
+    height: 100%;
+}
 
+.titulos .categoria{
+   grid-column: 2;
+}
+.despesas .titulos{
+    margin-bottom: 10px;
+  }
+  .despesas div:not(:first-child){
+    padding-bottom: 15px;
+  }
+.despesasColunas{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr;
+}
+
+.despesasColunas .botaoFechar button{
+    height: 31px;
+    width: 44px;
+    border: 1px solid black;
+    border-radius: 9px;
+    background-color: red;
+}
+.despesasColunas .botaoFechar button i{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    
+}
+.opcaoCategoria select , .despesasColunas div input{
+    height: 31px;
+    border-radius: 9px;
+    
+}
+.despesasColunas .inputDescricao input , .descricao{
+    width: 323px;
+}
+
+/*Fim despesas*/
 
 /*Pagina Formulario Fim*/

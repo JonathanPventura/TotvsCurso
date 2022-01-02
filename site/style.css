@@ -343,146 +343,222 @@ body{
 
 
 
+
 .formulario{
-    width: 90%;
-   
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/*Titulo topo inicio */
-.formulario .titulo {
-    width: 100%;
-    background-color: darkturquoise;
+.tituloRelatorio{
+    width: 90%;
     height: 109px;
     background: #F3F3F3;
     border: 1px solid #7A7A7A;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    justify-content: center;
     margin-bottom: 38px;
 }
-/*Titulo Topo Fim*/
-
-/*Informações solicitante inicio*/
-.formularioSolicitante{
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
-}
-.formularioSolicitante .tituloSolicitante{
+.tituloRelatorio h1{
     font-family: Heebo;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 48px;
+    line-height: 70px;
     text-align: center;
-    color: #656565;
-    padding: 25px;
+    color: #575757;
 }
-
-.dadosSolicitante div{
+.solicitante{
+    background-color: white;
+    width: 90%;
+}
+.tituloSolicitante{
+    text-align: center;
+}
+.infSolicitante{
     display: flex;
     flex-direction: column;
-    width: 95%;
-    margin-left: 50px;
-    margin-bottom: 20px;
-
- 
+    border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    border-radius: 10px;
+  
 }
-.dadosSolicitante div input{
-    height: 32px;
+.caixaLabel{
+    margin: 45px;
+}
+.infSolicitante div label{
+    width: 108px;
+    height: 25px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #7A7A7A;
+}
+.infSolicitante div label input , .linha input , .linha select{
+    width: 100%;
+    height: 31px;
     border: 1px solid #989898;
     box-sizing: border-box;
     border-radius: 10px;
- 
 }
-/*Informações solicitante fim*/
 
-/*Inicio despesas*/
-.tituloDespesas{
-    border: 1px solid black;
-    
-    display: grid;
-    grid-template-columns: 1fr 100px;
+.adicionarCampo {
+    position: relative;
+    background-color: white;
     width: 100%;
-    background-color: brown;
+    text-align: center;
+    margin-top: 64px;
+    padding-bottom: 5px;
+    
 }
-.tituloDespesas h1{
+.adicionarCampo i{
+    margin-right: 25px;
+    font-size: large;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.adicionarCampo button{
+    position: absolute;
+    height: 36px;
+    width: 153px;
+    top: 0px;
+    right: 99px;
+    background: #71AA70;
+    border-radius: 10px;
+    font-size: large;
+    float: right;
     font-family: Heebo;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 35px;
-    text-align: center;
-}
-.tituloDespesas .buttonNovo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #FFFFFF;
    
 }
-.tituloDespesas .buttonNovo button{
-    width: 135px;
-    height: 36px;
+.containerDespesas{
+    width: 90%;
+    border: 1px solid black;
+    padding: 50px;
     border-radius: 10px;
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 29px;
-    color: white;
-    background: #71AA70;
-
+    
 }
-.tituloDespesas .buttonNovo button i{
-    margin-right: 10px;
-
-
- }
-.formularioDespesa{
-    background-color: seagreen;
-    min-height: 600px;
-    height: 100%;
+.categoriaDespesas ,.linha{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 45px 1fr 2fr 1fr 1fr 1fr ;
+   column-gap: 20px;
 }
-
-.titulos .categoria{
+.categoriaDespesas{
+   text-align: center;
+}
+.categoriaDespesas .categoria{
    grid-column: 2;
 }
-.despesas .titulos{
-    margin-bottom: 10px;
-  }
-  .despesas div:not(:first-child){
-    padding-bottom: 15px;
-  }
-.despesasColunas{
-    text-align: center;
-    display: grid;
-    grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr;
+.linha{
+   margin-bottom: 28px;
+}
+.linha button{
+    width: 44px;
+    height: 31px;
+    background: #D45757;
+    border: 1px solid #D45757;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.linha button i {
+   font-size: x-large;
+   text-align: center;
+   color: white;
 }
 
-.despesasColunas .botaoFechar button{
-    height: 31px;
-    width: 44px;
-    border: 1px solid black;
-    border-radius: 9px;
-    background-color: red;
+.totalDespesas{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+width: 90%;
+font-family: Heebo;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+text-align: center;
+
+color: #7A7A7A;
 }
-.despesasColunas .botaoFechar button i{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    
+.totalDespesas p{
+margin-left: 25px;
+width: 184px;
+height: 49px;
+background: #F3F3F3;
+border: 1px solid #575757;
+box-sizing: border-box;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-.opcaoCategoria select , .despesasColunas div input{
-    height: 31px;
-    border-radius: 9px;
-    
+
+.caixaAcoes{
+margin-top: 46px;
+width: 90%;
+height: 106px;
+background: #C4C4C4;
+border: 1px solid #7A7A7A;
+box-sizing: border-box;
+border-radius: 10px;
+display: flex;
+align-items: center;
+margin-bottom: 150px;
 }
-.despesasColunas .inputDescricao input , .descricao{
-    width: 323px;
+.caixaAcoes h1{
+width: 25%;
+font-family: Heebo;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 53px;
+text-align: center;
+color: #FFFFFF;
 }
+.caixaAcoes div{
+width: 100%;
+height: 106px;
+background: #FFFFFF;
+border: 1px solid #7A7A7A;
+box-sizing: border-box;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.caixaAcoes div button{
+width: 208px;
+height: 56px;
+border-radius: 10px;
+font-family: Heebo;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 35px;
+text-align: center;
+color: #FFFFFF;
+}
+.limpar{
+background: #EEB764;
+}
+.cancelar{
+background: #D45757;
+}
+.enviar{
+background: #71AA70;
+}
+
+
 
 /*Fim despesas*/
 
 /*Pagina Formulario Fim*/
+

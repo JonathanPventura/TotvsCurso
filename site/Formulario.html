@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="corpo">
         <nav class="menu">
@@ -21,172 +25,183 @@
                 <li><a href="Formulario.html">Formulario</a></li>
             </ul>
         </nav>
-        <div class="formulario">
-            <div class="titulo">
-                    <h1>Relatorio de Despesa</h1>
+        
+    </div>
+    <form action="" id="RelatorioDeDespesas" class="formulario">
+        <div class="tituloRelatorio">
+            <h1>Relatorio Despesas</h1>
+        </div>
+        
+        <div class="solicitante">
+            <div class="tituloSolicitante">
+                <h1>Solicitante</h1>
             </div>
-                <div class="formularioSolicitante">
-                    <div class="tituloSolicitante">
-                        <h1>Solicitante</h1>
-                    </div>
-                    <form action="" method="post">
-                      <div class="dadosSolicitante">
-                          <div>
-                              <label for="">Solicitante</label>
-                              <input type="text">
-                          </div>
-                          <div>
-                            <label for="">Email</label>
-                            <input type="email">
-                        </div>
-                        <div>
-                            <label for="">Empresa</label>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <label for="">Area</label>
-                            <input type="text">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                <div class="formularioDespesa">
-                    <div class="tituloDespesas ">
-                        <h1>Despesas</h1>
-                        <div class="buttonNovo">
-                            <button><i class="fas fa-plus"></i>Novo</button>
-                        </div>
-                    </div>
-                    <form action="" method="get" class="despesas">
-                        <div class="titulos despesasColunas">
-                            <p class="categoria">Categoria</p>
-                            <p class="descricao">Descrição</p>
-                            <p class="vlrUnitario">Vlr. Unitário</p>
-                            <p class="quantidade">Quantidade</p>
-                            <p class="vlrTotal">Vlr. Total</p>
-                        </div>
-                        <div id="linha1" class="despesasColunas">
-                            <div class="botaoFechar">
-                                <button><i class="fas fa-times"></i></button>
-                            </div>
-                            <div class="opcaoCategoria">
-                                <select name="" id="" >
-                                    <option value="">Hospedagem</option>
-                                    <option value="">Pedágio</option>
-                                    <option value="">Alimentação</option>
-                                    <option value="">Combustivel</option>
-                                    <option value="">Outra</option>
-                                </select>
-                            </div>
-                            <div class="inputDescricao">
-                                <input type="text" name="" >
-                            </div>
-                            <div class="inputVlrUnitario">
-                                <input type="text">
-                            </div>
-                            <div class="inputQuantidade">
-                                <input type="text">
-                            </div>
-                            <div class="inputVlrTotal">
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div id="linha2" class="despesasColunas">
-                            <div class="botaoFechar">
-                                <button><i class="fas fa-times"></i></button>
-                            </div>
-                            <div class="opcaoCategoria">
-                                <select name="" id="" >
-                                    <option value="">Hospedagem</option>
-                                    <option value="">Pedágio</option>
-                                    <option value="">Alimentação</option>
-                                    <option value="">Combustivel</option>
-                                    <option value="">Outra</option>
-                                </select>
-                            </div>
-                            <div class="inputDescricao">
-                                <input type="text" name="" >
-                            </div>
-                            <div class="inputVlrUnitario">
-                                <input type="text">
-                            </div>
-                            <div class="inputQuantidade">
-                                <input type="text">
-                            </div>
-                            <div class="inputVlrTotal">
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div id="linha3" class="despesasColunas">
-                            <div class="botaoFechar">
-                                <button><i class="fas fa-times"></i></button>
-                            </div>
-                            <div class="opcaoCategoria">
-                                <select name="" id="" >
-                                    <option value="">Hospedagem</option>
-                                    <option value="">Pedágio</option>
-                                    <option value="">Alimentação</option>
-                                    <option value="">Combustivel</option>
-                                    <option value="">Outra</option>
-                                </select>
-                            </div>
-                            <div class="inputDescricao">
-                                <input type="text" name="" >
-                            </div>
-                            <div class="inputVlrUnitario">
-                                <input type="text">
-                            </div>
-                            <div class="inputQuantidade">
-                                <input type="text">
-                            </div>
-                            <div class="inputVlrTotal">
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div id="linha4" class="despesasColunas">
-                            <div class="botaoFechar">
-                                <button><i class="fas fa-times"></i></button>
-                            </div>
-                            <div class="opcaoCategoria">
-                                <select name="" id="" >
-                                    <option value="">Hospedagem</option>
-                                    <option value="">Pedágio</option>
-                                    <option value="">Alimentação</option>
-                                    <option value="">Combustivel</option>
-                                    <option value="">Outra</option>
-                                </select>
-                            </div>
-                            <div class="inputDescricao">
-                                <input type="text" name="" >
-                            </div>
-                            <div class="inputVlrUnitario">
-                                <input type="text">
-                            </div>
-                            <div class="inputQuantidade">
-                                <input type="text">
-                            </div>
-                            <div class="inputVlrTotal">
-                                <input type="text">
-                            </div>
-                        </div>
-                        
-                    </form>
+           
+            <div class="infSolicitante">
+                <div class="caixaLabel">
+                <div>
+                    <label for="nomeSolicitante">Solicitante <input type="text"  name="nomeSolicitante"></label>
                 </div>
-        </div>
-            
-        </div>
-        <div class="rodape blogRodape">
-            <div class="icones">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github"></i>
+                <div>
+                    <label for="email">Email<input type="text" name="email" ></label>
+                </div>
+                <div>
+                    <label for="empresa">Empresa<input type="text" name="empresa"></label>
+                </div>
+                <div>
+                    <label for="area">Area<input type="text" name="area"></label>
+                </div>
             </div>
-            <small class="copyRight">&copy; Copyright 2021 Todos os direitos reservados</small>
+            </div>
         </div>
+
+
+
+        <div class="adicionarCampo TituloFormulario">
+            <h1>Despesas</h1>
+            <button type="button" id="BotaoAdd"><i class="fas fa-plus"></i> Novo</button>
+        </div>
+        <div class="containerDespesas">
+            <div class="categoriaDespesas">
+                <p class="categoria">Categoria</p>
+                <p class="descricao">Descrição</p>
+                <p class="vlrUnitario">Vlr. Unitário</p>
+                <p class="quantidade">Quantidade</p>
+                <p class="vlrTotal">Vlr. Total</p>
+            </div>
+            <div id="despesa" >
+
+            <div class="despesas1 linha" >
+                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+         
+                <select name="" id="">
+                    <option value="">Hospedagem</option>
+                    <option value="">Pedágio</option>
+                    <option value="">Alimentação</option>
+                    <option value="">Combustivel</option>
+                    <option value="">Outra</option>
+                </select>
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+            </div>
+            <div class="despesas2 linha" >
+                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+         
+                <select name="" id="">
+                    <option value="">Hospedagem</option>
+                    <option value="">Pedágio</option>
+                    <option value="">Alimentação</option>
+                    <option value="">Combustivel</option>
+                    <option value="">Outra</option>
+                </select>
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+            </div>
+            <div class="despesas3 linha" >
+                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+         
+                <select name="" id="">
+                    <option value="">Hospedagem</option>
+                    <option value="">Pedágio</option>
+                    <option value="">Alimentação</option>
+                    <option value="">Combustivel</option>
+                    <option value="">Outra</option>
+                </select>
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+            </div>
+            <div class="despesas4 linha" >
+                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+         
+                <select name="" id="">
+                    <option value="">Hospedagem</option>
+                    <option value="">Pedágio</option>
+                    <option value="">Alimentação</option>
+                    <option value="">Combustivel</option>
+                    <option value="">Outra</option>
+                </select>
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+            </div>
+            <div class="despesas5 linha" >
+                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+         
+                <select name="" id="">
+                    <option value="">Hospedagem</option>
+                    <option value="">Pedágio</option>
+                    <option value="">Alimentação</option>
+                    <option value="">Combustivel</option>
+                    <option value="">Outra</option>
+                </select>
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+            </div>
+            <div class="despesas6 linha" >
+                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+         
+                <select name="" id="">
+                    <option value="">Hospedagem</option>
+                    <option value="">Pedágio</option>
+                    <option value="">Alimentação</option>
+                    <option value="">Combustivel</option>
+                    <option value="">Outra</option>
+                </select>
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+                <input type="text" name="">
+            </div>
+
+            </div>
+            
+            <div class="totalDespesas">
+                <h2>Total despesas</h2>
+                <p>R$ 0.000,00</p>
+
+            </div>
+        </div>
+
+
+        <div class="caixaAcoes">
+            <h1>Ações</h1>
+            <div>
+                <button type="reset" class="limpar">Limpar</button>
+                <button type="button" class="cancelar">Cancelar</button>
+                <button type="button" class="enviar">Enviar</button>
+            </div>
+        </div>
+</form>
+
+   
+    <div class="rodape blogRodape">
+        <div class="icones">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+        </div>
+        <small class="copyRight">&copy; Copyright 2021 Todos os direitos reservados</small>
+    </div>
 
 
     </div>
 </body>
+<script>
+    $("#novoCampo").click(function () {
+        $(".despesas").append(' <div class="linha" id="despesa1"><button><i class="fas fa-times"></i></button><select name="" id="" ><option value="">Hospedagem</option><option value="">Pedágio</option><option value="">Alimentação</option><option value="">Combustivel</option><option value="">Outra</option></select><input type="text" name="" ><input type="text" name="" ><input type="text" name="" ><input type="text" name="" ></div>');
+    });
+
+</script>
+
 </html>

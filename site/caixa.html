@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css%22%3E">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .formulario{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tituloRelatorio{
+            width: 90%;
+            height: 109px;
+            background: #F3F3F3;
+            border: 1px solid #7A7A7A;
+            box-sizing: border-box;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 38px;
+        }
+        .tituloRelatorio h1{
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 70px;
+            text-align: center;
+            color: #575757;
+        }
+        .solicitante{
+            background-color: white;
+            width: 90%;
+        }
+        .tituloSolicitante{
+            text-align: center;
+        }
+        .infSolicitante{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #7A7A7A;
+            box-sizing: border-box;
+            border-radius: 10px;
+          
+        }
+        .caixaLabel{
+            margin: 45px;
+        }
+        .infSolicitante div label{
+            width: 108px;
+            height: 25px;
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #7A7A7A;
+        }
+        .infSolicitante div label input , .linha input , .linha select{
+            width: 100%;
+            height: 31px;
+            border: 1px solid #989898;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .adicionarCampo {
+            position: relative;
+            background-color: white;
+            width: 100%;
+            text-align: center;
+            margin-top: 64px;
+            padding-bottom: 5px;
+            
+        }
+        .adicionarCampo i{
+            margin-right: 25px;
+            font-size: large;
+            font-style: normal;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        .adicionarCampo button{
+            position: absolute;
+            height: 36px;
+            width: 153px;
+            top: 0px;
+            right: 99px;
+            background: #71AA70;
+            border-radius: 10px;
+            font-size: large;
+            float: right;
+            font-family: Heebo;
+            font-style: normal;
+            font-weight: bold;
+            color: #FFFFFF;
+           
+        }
+        .containerDespesas{
+            width: 90%;
+            border: 1px solid black;
+            padding: 50px;
+            border-radius: 10px;
+            
+        }
+        .remover{
+            width: 44px;
+            height: 31px;
+            left: 109px;
+            top: 823px;
+
+            background: #D45757;
+            border: 1px solid #D45757;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+       .categoriaDespesas ,.linha{
+           width: 100%;
+           display: grid;
+           grid-template-columns: 45px 1fr 2fr 1fr 1fr 1fr ;
+           column-gap: 20px;
+       }
+       .categoriaDespesas{
+           text-align: center;
+       }
+       .categoriaDespesas .categoria{
+           grid-column: 2;
+       }
+       .linha{
+           margin-bottom: 28px;
+       }
+       .linha button{
+        width: 44px;
+        height: 31px;
+        background: #D45757;
+        border: 1px solid #D45757;
+        box-sizing: border-box;
+        border-radius: 10px;
+       }
+      .totalDespesas{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 90%;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+
+        color: #7A7A7A;
+      }
+      .totalDespesas p{
+        margin-left: 25px;
+        width: 184px;
+        height: 49px;
+        background: #F3F3F3;
+        border: 1px solid #575757;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .caixaAcoes{
+        margin-top: 46px;
+        width: 90%;
+        height: 106px;
+        background: #C4C4C4;
+        border: 1px solid #7A7A7A;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .caixaAcoes h1{
+        width: 25%;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 53px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .caixaAcoes div{
+        width: 100%;
+        height: 106px;
+        background: #FFFFFF;
+        border: 1px solid #7A7A7A;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        }
+        .caixaAcoes div button{
+        width: 208px;
+        height: 56px;
+        border-radius: 10px;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        color: #FFFFFF;
+        }
+        .limpar{
+        background: #EEB764;
+        }
+        .cancelar{
+        background: #D45757;
+        }
+        .enviar{
+        background: #71AA70;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" id="RelatorioDeDespesas" class="formulario">
+            <div class="tituloRelatorio">
+                <h1>Relatorio Despesas</h1>
+            </div>
+            
+            <div class="solicitante">
+                <div class="tituloSolicitante">
+                    <h1>Solicitante</h1>
+                </div>
+               
+                <div class="infSolicitante">
+                    <div class="caixaLabel">
+                    <div>
+                        <label for="nomeSolicitante">Solicitante <input type="text"  name="nomeSolicitante"></label>
+                    </div>
+                    <div>
+                        <label for="email">Email<input type="text" name="email" ></label>
+                    </div>
+                    <div>
+                        <label for="empresa">Empresa<input type="text" name="empresa"></label>
+                    </div>
+                    <div>
+                        <label for="area">Area<input type="text" name="area"></label>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+            <div class="adicionarCampo TituloFormulario">
+                <h1>Despesas</h1>
+                <button type="button" id="BotaoAdd"><i class="fas fa-plus"></i> Novo</button>
+            </div>
+            <div class="containerDespesas">
+                <div class="categoriaDespesas">
+                    <p class="categoria">Categoria</p>
+                    <p class="descricao">Descrição</p>
+                    <p class="vlrUnitario">Vlr. Unitário</p>
+                    <p class="quantidade">Quantidade</p>
+                    <p class="vlrTotal">Vlr. Total</p>
+                </div>
+                <div id="despesa" >
+
+                <div class="despesas1 linha" >
+                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+             
+                    <select name="" id="">
+                        <option value="">Hospedagem</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustivel</option>
+                        <option value="">Outra</option>
+                    </select>
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                </div>
+                <div class="despesas2 linha" >
+                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+             
+                    <select name="" id="">
+                        <option value="">Hospedagem</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustivel</option>
+                        <option value="">Outra</option>
+                    </select>
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                </div>
+                <div class="despesas3 linha" >
+                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+             
+                    <select name="" id="">
+                        <option value="">Hospedagem</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustivel</option>
+                        <option value="">Outra</option>
+                    </select>
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                </div>
+                <div class="despesas4 linha" >
+                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+             
+                    <select name="" id="">
+                        <option value="">Hospedagem</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustivel</option>
+                        <option value="">Outra</option>
+                    </select>
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                </div>
+                <div class="despesas5 linha" >
+                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+             
+                    <select name="" id="">
+                        <option value="">Hospedagem</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustivel</option>
+                        <option value="">Outra</option>
+                    </select>
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                </div>
+                <div class="despesas6 linha" >
+                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+             
+                    <select name="" id="">
+                        <option value="">Hospedagem</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustivel</option>
+                        <option value="">Outra</option>
+                    </select>
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                    <input type="text" name="">
+                </div>
+
+                </div>
+                
+                <div class="totalDespesas">
+                    <h2>Total despesas</h2>
+                    <p>R$ 0.000,00</p>
+    
+                </div>
+            </div>
+
+
+            <div class="caixaAcoes">
+                <h1>Ações</h1>
+                <div>
+                    <button type="reset" class="limpar">Limpar</button>
+                    <button type="button" class="cancelar">Cancelar</button>
+                    <button type="button" class="enviar">Enviar</button>
+                </div>
+            </div>
+    </form>
+</body>
+<script>
+
+
+    $(function (){
+        var divContainer = $('#despesa');
+        var botaoAdd = $('#BotaoAdd');
+        var i = 4;
+
+        $(botaoAdd).click(function(){
+            $(' <div id="despesa'+i+'" class="conteudoIndividual"> <div class="despesas linha" > <button type="button" class="remove"><i class="fas fa-times"></i></button>  <select name="" id=""> <option value="">Hospedagem</option>  <option value="">Pedágio</option> <option value="">Alimentação</option> <option value="">Combustivel</option> <option value="">Outra</option>  </select><input type="text" name=""><input type="text" name=""><input type="text" name=""><input type="text" name="">').appendTo(divContainer)
+                i++;
+        });
+    
+       
+
+
+        $('#despesa').on('click', '.remove', function(){
+            $(this).parents('.conteudoIndividual').remove();
+            i--;
+        })
+
+    });
+
+
+</script>
+</html>

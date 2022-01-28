@@ -19,7 +19,7 @@
                 <div class="linha2"></div>
             </div>
             <ul class="navegacao">
-                <li><a href="Home.html">Home</a></li>
+                <li><a href="Index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="fluig.html">Fluig</a></li>
                 <li><a href="Formulario.html">Formulario</a></li>
@@ -71,102 +71,28 @@
             </div>
             <div id="despesa" >
 
-            <div class="despesas1 linha" >
-                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
-         
-                <select name="" id="">
-                    <option value="">Hospedagem</option>
-                    <option value="">Pedágio</option>
-                    <option value="">Alimentação</option>
-                    <option value="">Combustivel</option>
-                    <option value="">Outra</option>
-                </select>
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-            </div>
-            <div class="despesas2 linha" >
-                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
-         
-                <select name="" id="">
-                    <option value="">Hospedagem</option>
-                    <option value="">Pedágio</option>
-                    <option value="">Alimentação</option>
-                    <option value="">Combustivel</option>
-                    <option value="">Outra</option>
-                </select>
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-            </div>
-            <div class="despesas3 linha" >
-                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
-         
-                <select name="" id="">
-                    <option value="">Hospedagem</option>
-                    <option value="">Pedágio</option>
-                    <option value="">Alimentação</option>
-                    <option value="">Combustivel</option>
-                    <option value="">Outra</option>
-                </select>
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-            </div>
-            <div class="despesas4 linha" >
-                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
-         
-                <select name="" id="">
-                    <option value="">Hospedagem</option>
-                    <option value="">Pedágio</option>
-                    <option value="">Alimentação</option>
-                    <option value="">Combustivel</option>
-                    <option value="">Outra</option>
-                </select>
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-            </div>
-            <div class="despesas5 linha" >
-                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
-         
-                <select name="" id="">
-                    <option value="">Hospedagem</option>
-                    <option value="">Pedágio</option>
-                    <option value="">Alimentação</option>
-                    <option value="">Combustivel</option>
-                    <option value="">Outra</option>
-                </select>
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-            </div>
-            <div class="despesas6 linha" >
-                <button type="button" class="remove" ><i class="fas fa-times"></i></button>
-         
-                <select name="" id="">
-                    <option value="">Hospedagem</option>
-                    <option value="">Pedágio</option>
-                    <option value="">Alimentação</option>
-                    <option value="">Combustivel</option>
-                    <option value="">Outra</option>
-                </select>
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-                <input type="text" name="">
-            </div>
+                <div class="despesas1 linha" >
+                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
+            
+                    <select name="" id="">
+                        <option value="">Hospedagem</option>
+                        <option value="">Pedágio</option>
+                        <option value="">Alimentação</option>
+                        <option value="">Combustivel</option>
+                        <option value="">Outra</option>
+                    </select>
+                    <input type="text" name="">
+                    <input type="text" name="quantidade"  class="quantidade total" />
+                    <input type="text" name="valor_unitario"  class="valor_unitario total" />
+                    <input type="text" name="valor_total" class="valorTotal" disabled  />
+                </div>
+        
 
             </div>
             
             <div class="totalDespesas">
                 <h2>Total despesas</h2>
-                <p>R$ 0.000,00</p>
+                <p class="valorTotal">R$ 0.000,00</p>
 
             </div>
         </div>
@@ -195,13 +121,9 @@
     </div>
 
 
-    </div>
-</body>
-<script>
-    $("#novoCampo").click(function () {
-        $(".despesas").append(' <div class="linha" id="despesa1"><button><i class="fas fa-times"></i></button><select name="" id="" ><option value="">Hospedagem</option><option value="">Pedágio</option><option value="">Alimentação</option><option value="">Combustivel</option><option value="">Outra</option></select><input type="text" name="" ><input type="text" name="" ><input type="text" name="" ><input type="text" name="" ></div>');
-    });
 
-</script>
+
+</body>
+
 
 </html>

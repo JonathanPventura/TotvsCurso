@@ -644,3 +644,17 @@ background: #71AA70;
 }
 
 
+
+.bordaVideo{
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.bordaVideo iframe{
+    width: 1150.66px;
+    height: 638.21px;
+}

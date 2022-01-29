@@ -1,129 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="corpo">
-        <nav class="menu">
-            <div class="linha1">
-                <div class="linha2"></div>
-            </div>
-            <ul class="navegacao">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="fluig.html">Fluig</a></li>
-                <li><a href="Formulario.html">Formulario</a></li>
-            </ul>
-        </nav>
-        
-    </div>
-    <form action="" id="RelatorioDeDespesas" class="formulario">
-        <div class="tituloRelatorio">
-            <h1>Relatorio Despesas</h1>
+    <body>
+        <div class="corpo">
+            <nav class="menu">
+                <div class="linha1">
+                    <div class="linha2"></div>
+                </div>
+                <ul class="navegacao">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="fluig.html">Fluig</a></li>
+                    <li><a href="Formulario.html">Formulario</a></li>
+                </ul>
+            </nav>            
         </div>
-        
-        <div class="solicitante">
-            <div class="tituloSolicitante">
-                <h1>Solicitante</h1>
+        <form action="" id="RelatorioDeDespesas" class="formulario">
+            <div class="tituloRelatorio">
+                <h1>Relatorio Despesas</h1>
+            </div>            
+            <div class="solicitante">
+                <div class="tituloSolicitante">
+                    <h1>Solicitante</h1>
+                </div>           
+                <div class="infSolicitante">
+                    <div class="caixaLabel">
+                        <div>
+                            <label for="nomeSolicitante">Solicitante <input type="text"  name="nomeSolicitante"></label>
+                        </div>
+                        <div>
+                            <label for="email">Email<input type="text" name="email" ></label>
+                        </div>
+                        <div>
+                            <label for="empresa">Empresa<input type="text" name="empresa"></label>
+                        </div>
+                        <div>
+                            <label for="area">Area<input type="text" name="area"></label>
+                        </div>
+                    </div>
+                </div>
             </div>
-           
-            <div class="infSolicitante">
-                <div class="caixaLabel">
+            <div class="adicionarCampo TituloFormulario">
+                <h1>Despesas</h1>
+                <button type="button" id="BotaoAdd"><i class="fas fa-plus"></i> Novo</button>
+            </div>
+            <div class="containerDespesas">
+                <div class="categoriaDespesas">
+                    <p class="categoria">Categoria</p>
+                    <p class="descricao">Descrição</p>
+                    <p class="vlrUnitario">Vlr. Unitário</p>
+                    <p class="quantidade">Quantidade</p>
+                    <p class="vlrTotal">Vlr. Total</p>
+                </div>
+                <div id="despesa" >
+                    <div class="despesas1 linha " >
+                        <button type="button" class="remove apagarteste" ><i class="fas fa-times"></i></button>                
+                        <select name="" id="">
+                            <option value="">Hospedagem</option>
+                            <option value="">Pedágio</option>
+                            <option value="">Alimentação</option>
+                            <option value="">Combustivel</option>
+                            <option value="">Outra</option>
+                        </select>
+                        <input type="text" name="">
+                        <input type="text" name="quantidade"  class="quantidade total" />
+                        <input type="text" name="valor_unitario"  class="valor_unitario total" />
+                        <input type="text" name="valor_total" class="valorTotal" disabled  />
+                    </div>
+                </div>                
+                <div class="totalDespesas">
+                    <h2>Total despesas</h2>
+                    <p class="valorTotal">R$ 0.000,00</p>
+                </div>
+            </div>
+            <div class="caixaAcoes">
+                <h1>Ações</h1>
                 <div>
-                    <label for="nomeSolicitante">Solicitante <input type="text"  name="nomeSolicitante"></label>
-                </div>
-                <div>
-                    <label for="email">Email<input type="text" name="email" ></label>
-                </div>
-                <div>
-                    <label for="empresa">Empresa<input type="text" name="empresa"></label>
-                </div>
-                <div>
-                    <label for="area">Area<input type="text" name="area"></label>
+                    <button type="reset" class="limpar">Limpar</button>
+                    <button type="button" class="cancelar">Cancelar</button>
+                    <button type="button" class="enviar">Enviar</button>
                 </div>
             </div>
+    </form>   
+        <div class="rodape blogRodape">
+            <div class="icones">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
             </div>
+            <small class="copyRight">&copy; Copyright 2021 Todos os direitos reservados</small>
         </div>
-
-
-
-        <div class="adicionarCampo TituloFormulario">
-            <h1>Despesas</h1>
-            <button type="button" id="BotaoAdd"><i class="fas fa-plus"></i> Novo</button>
-        </div>
-        <div class="containerDespesas">
-            <div class="categoriaDespesas">
-                <p class="categoria">Categoria</p>
-                <p class="descricao">Descrição</p>
-                <p class="vlrUnitario">Vlr. Unitário</p>
-                <p class="quantidade">Quantidade</p>
-                <p class="vlrTotal">Vlr. Total</p>
-            </div>
-            <div id="despesa" >
-
-                <div class="despesas1 linha" >
-                    <button type="button" class="remove" ><i class="fas fa-times"></i></button>
-            
-                    <select name="" id="">
-                        <option value="">Hospedagem</option>
-                        <option value="">Pedágio</option>
-                        <option value="">Alimentação</option>
-                        <option value="">Combustivel</option>
-                        <option value="">Outra</option>
-                    </select>
-                    <input type="text" name="">
-                    <input type="text" name="quantidade"  class="quantidade total" />
-                    <input type="text" name="valor_unitario"  class="valor_unitario total" />
-                    <input type="text" name="valor_total" class="valorTotal" disabled  />
-                </div>
-        
-
-            </div>
-            
-            <div class="totalDespesas">
-                <h2>Total despesas</h2>
-                <p class="valorTotal">R$ 0.000,00</p>
-
-            </div>
-        </div>
-
-
-        <div class="caixaAcoes">
-            <h1>Ações</h1>
-            <div>
-                <button type="reset" class="limpar">Limpar</button>
-                <button type="button" class="cancelar">Cancelar</button>
-                <button type="button" class="enviar">Enviar</button>
-            </div>
-        </div>
-</form>
-
-   
-    <div class="rodape blogRodape">
-        <div class="icones">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
-        </div>
-        <small class="copyRight">&copy; Copyright 2021 Todos os direitos reservados</small>
-    </div>
-
-
-
-
-</body>
-
-
+    </body>
 </html>

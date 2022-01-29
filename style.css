@@ -5,9 +5,6 @@
     box-sizing: border-box;
 
 }
-body{
-    
-}
 
 /*Pagina Home Inicio*/
 
@@ -36,7 +33,6 @@ body{
     height: 19px;
     background-color: #646464;
 }
-
 .menu .navegacao{
     margin: auto;
     width: 80%;
@@ -53,7 +49,10 @@ body{
     text-decoration: none;
     color: black;
 }
- 
+.navegacao li a:hover{
+    color: rgb(58, 52, 52);
+    font-size: 20px;
+}
 /*Menu Fim*/
 
 /*Resumo inicio*/
@@ -176,10 +175,7 @@ body{
     margin: 0 45px 0 0;
     font-family: Heebo;
     font-style: normal;
-    font-weight: normal;
-
-    
-    
+    font-weight: normal;    
 }
 .exp1 div, .exp2 div {
     display: flex;
@@ -210,9 +206,7 @@ body{
     align-items: center;
     justify-content: end;
     text-align: center;
-    padding-right: 10px;
-    
-    
+    padding-right: 10px;    
 }
 
 .javaScript .barraExp span{
@@ -221,7 +215,6 @@ body{
     height: 100%;
     background-color: #7A7A7A;
     margin: 0;
- 
 }
 .php .barraExp span{
     border-radius: 50px;
@@ -229,7 +222,6 @@ body{
     height: 100%;
     background-color: #7A7A7A;
     margin: 0;
- 
 }
 .node .barraExp span{
     border-radius: 50px;
@@ -237,7 +229,6 @@ body{
     height: 100%;
     background-color: #7A7A7A;
     margin: 0;
- 
 }
 .fluig .barraExp span{
     border-radius: 50px;
@@ -245,7 +236,6 @@ body{
     height: 100%;
     background-color: #7A7A7A;
     margin: 0;
- 
 }
 .python .barraExp span{
     border-radius: 50px;
@@ -253,7 +243,6 @@ body{
     height: 100%;
     background-color: #7A7A7A;
     margin: 0;
- 
 }
 .htmlCss .barraExp span{
     border-radius: 50px;
@@ -261,9 +250,7 @@ body{
     height: 100%;
     background-color: #7A7A7A;
     margin: 0;
- 
 }
-
 
 /*Exp fim*/
 
@@ -331,7 +318,6 @@ body{
 /*Trabalhos Fim*/
 
 /*Rodape inicio*/
-
 .rodape{
     display: flex;
     justify-content: center;
@@ -364,9 +350,7 @@ body{
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin: 10px;
-
-    
+    margin: 10px;   
 }
 .blogTitulo{
     display: flex;
@@ -393,17 +377,25 @@ body{
     width: 100px;
 }
 .blogRodape{
-  
-    bottom: 0;
-  
+    bottom: 0; 
 }
 
 /*Pagina Blog Fim*/
 
+/*Inicio Fluig*/
+.bordaVideo{
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bordaVideo iframe{
+    width: 1150.66px;
+    height: 638.21px;
+}
+/*Fim Fluig*/
 /*Pagina Formulario Inicio*/
-
-
-
 
 .formulario{
     background-color: white;
@@ -445,8 +437,7 @@ body{
     flex-direction: column;
     border: 1px solid #7A7A7A;
     box-sizing: border-box;
-    border-radius: 10px;
-  
+    border-radius: 10px; 
 }
 .caixaLabel{
     margin: 45px;
@@ -534,101 +525,98 @@ body{
     border-radius: 10px;
 }
 .linha button i {
-   font-size: x-large;
-   text-align: center;
-   color: white;
+    font-size: x-large;
+    text-align: center;
+    color: white;
 }
 
 .totalDespesas{
-display: flex;
-justify-content: flex-end;
-align-items: center;
-width: 90%;
-font-family: Heebo;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
 
 color: #7A7A7A;
 }
 .totalDespesas p{
-margin-left: 25px;
-width: 184px;
-height: 49px;
-background: #F3F3F3;
-border: 1px solid #575757;
-box-sizing: border-box;
-border-radius: 10px;
-display: flex;
-align-items: center;
-justify-content: center;
+    margin-left: 25px;
+    width: 184px;
+    height: 49px;
+    background: #F3F3F3;
+    border: 1px solid #575757;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .caixaAcoes{
-margin-top: 46px;
-width: 90%;
-height: 106px;
-background: #C4C4C4;
-border: 1px solid #7A7A7A;
-box-sizing: border-box;
-border-radius: 10px;
-display: flex;
-align-items: center;
-margin-bottom: 150px;
+    margin-top: 46px;
+    width: 90%;
+    height: 106px;
+    background: #C4C4C4;
+    border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
 }
 .caixaAcoes h1{
-width: 25%;
-font-family: Heebo;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 53px;
-text-align: center;
-color: #FFFFFF;
+    width: 25%;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
 }
 .caixaAcoes div{
-width: 100%;
-height: 106px;
-background: #FFFFFF;
-border: 1px solid #7A7A7A;
-box-sizing: border-box;
-border-radius: 10px;
-display: flex;
-align-items: center;
-justify-content: space-around;
+    width: 100%;
+    height: 106px;
+    background: #FFFFFF;
+    border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .caixaAcoes div button{
-width: 208px;
-height: 56px;
-border-radius: 10px;
-font-family: Heebo;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 35px;
-text-align: center;
-color: #FFFFFF;
+    width: 208px;
+    height: 56px;
+    border-radius: 10px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
 }
 .limpar{
-background: #EEB764;
+    background: #EEB764;
 }
 .cancelar{
-background: #D45757;
+    background: #D45757;
 }
 .enviar{
-background: #71AA70;
+    background: #71AA70;
 }
-
-
-
 /*Fim despesas*/
 
 /*Pagina Formulario Fim*/
 
-.modalteste{
+/* .modalteste{
     display: none;
-}
+} */
 .total, .valorTotal{
     text-align: center;
 }
@@ -643,18 +631,8 @@ background: #71AA70;
     
 }
 
-
-
-.bordaVideo{
-    width: 1200px;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-.bordaVideo iframe{
-    width: 1150.66px;
-    height: 638.21px;
+/* Tag link site */
+.linkSite{
+    color: black;
+    cursor: pointer;
 }
